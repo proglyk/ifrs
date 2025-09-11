@@ -21,6 +21,8 @@ struct ifrs_s {
   u8_t      ds_select;
   subsprm_t subsprm;
   outdata_t outdata;
+  // low level
+  serdev_t *serdev;
 };
 
 /**	----------------------------------------------------------------------------
@@ -36,6 +38,16 @@ ifrs_t *
   // ...
 
   return self;
+}
+
+/**	----------------------------------------------------------------------------
+	* @brief Main structure's (named as 'self') constructor */
+int
+  ifrs__init(ifrs_t *self, serdev_t *dev) {
+/*----------------------------------------------------------------------------*/
+  self->serdev = dev;
+
+  return 0;
 }
 
 /**	----------------------------------------------------------------------------

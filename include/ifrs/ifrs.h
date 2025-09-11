@@ -12,10 +12,12 @@
 #define  _IFRS_H_
 
 #include "ifrs_types.h"
+#include "ifrs/ifrs_serdev.h"
 
 typedef struct ifrs_s ifrs_t;
 
 ifrs_t *ifrs__create(void);
+int     ifrs__init(ifrs_t *, serdev_t *);
 void    ifrs__delete(ifrs_t *);
 
 #endif //_IFRS_H_
