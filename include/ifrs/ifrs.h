@@ -15,7 +15,7 @@
 
 typedef struct ifrs_s ifrs_t;
 
-ifrs_t ifrs__create(void);
-void   ifrs__delete(ifrs_t *);
+ifrs_t *ifrs__create(void);
+void    ifrs__delete(ifrs_t *);
 
 #endif //_IFRS_H_

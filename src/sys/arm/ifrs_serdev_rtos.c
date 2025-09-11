@@ -1,10 +1,12 @@
-#include "serdev.h"
+#include "ifrs/ifrs_serdev.h"
+#include "sys/arm/userint.h"
+#include "stdbool.h"
 
 static int  serdev__link(serdev_t *);
 static int  serdev__init(serdev_t *);
 static int  serdev__open(serdev_t *);
-static int  serdev__read(serdev_t *, u8_t *, int, int);
-static int  serdev__write(serdev_t *, u8_t *, int, int);
+static int  serdev__read(serdev_t *, char *, int, int);
+static int  serdev__write(serdev_t *, char *, int, int);
 static void serdev__nre_de(serdev_t *, bool);
 static void serdev__close(serdev_t *);
 
@@ -48,7 +50,7 @@ static int
 /**	----------------------------------------------------------------------------
 	* @brief ??? */
 static int
-  serdev__read(serdev_t *dev, u8_t *, int, int) {
+  serdev__read(serdev_t *dev, char *buf, int arg1, int arg2) {
 /*----------------------------------------------------------------------------*/
 
 	return 0;
@@ -57,7 +59,7 @@ static int
 /**	----------------------------------------------------------------------------
 	* @brief ??? */
 static int
-  serdev__write(serdev_t *dev, u8_t *, int, int) {
+  serdev__write(serdev_t *dev, char *buf, int arg1, int arg2) {
 /*----------------------------------------------------------------------------*/
 
 	return 0;

@@ -11,6 +11,8 @@
 #ifndef  _IFRS_TYPES_H_
 #define  _IFRS_TYPES_H_
 
+#include "sys/arm/userint.h"
+
 typedef struct subsprm_s subsprm_t;
 typedef struct cargvalue_s cargvalue_t;
 typedef struct outdata_s outdata_t;

@@ -11,6 +11,9 @@
 #ifndef  _SERDEV_H_
 #define  _SERDEV_H_
 
+//#include "sys/arm/userint.h"
+#include "stdbool.h"
+
 typedef struct serdev serdev_t;
 struct serdev
 {
@@ -18,8 +21,8 @@ struct serdev
   int  (*link)  (serdev_t*);
   int  (*init)  (serdev_t*);
   int  (*open)  (serdev_t*);
-	int  (*read)  (serdev_t*, u8_t *, int, int);
-	int  (*write) (serdev_t*, u8_t *, int, int);
+	int  (*read)  (serdev_t*, char *, int, int);
+	int  (*write) (serdev_t*, char *, int, int);
   void (*nre_de) (serdev_t*, bool);
   void (*close) (serdev_t*);
 };
