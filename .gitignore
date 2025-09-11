@@ -56,3 +56,5 @@ dkms.conf
 
 # IAR project files
 build/*
+settings/*
+*.eww
