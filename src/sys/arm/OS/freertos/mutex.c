@@ -1,5 +1,5 @@
 /*******************************************************************************
-  * @file    thread.c
+  * @file    mutex.c
   * @author  Ilia Proniashin, ilyapronyashin23@yandex.ru
   * @version V0.1.0
   * @date    10-September-2025
@@ -7,18 +7,36 @@
   * @attention The source code is presented as is
   *****************************************************************************/
 
-#include "sys/arm/OS/thread.h"
+#include "sys/arm/OS/mutex.h"
 #include "FreeRTOS.h"
-#include "task.h"
-
-struct thread_s {
-	TaskHandle_t h;
+#include "semphr.h"
+  
+struct mutex_s {
+  SemaphoreHandle_t h;
 };
 
 /**	----------------------------------------------------------------------------
 	* @brief ??? */
+void
+  mutex_init(mutex_t *self) {
+/*----------------------------------------------------------------------------*/
+  
+	return;
+}
+
+/**	----------------------------------------------------------------------------
+	* @brief ??? */
+void
+  mutex_delete(mutex_t *self) {
+/*----------------------------------------------------------------------------*/
+  
+	return;
+}
+
+/**	----------------------------------------------------------------------------
+	* @brief ??? */
 int
-  thread_start(thread_t *self, void (*fn)(void *), void *pld) {
+  mutex_lock(mutex_t *self) {
 /*----------------------------------------------------------------------------*/
   
 	return 0;
@@ -27,7 +45,7 @@ int
 /**	----------------------------------------------------------------------------
 	* @brief ??? */
 int
-  thread_delete(thread_t *self) {
+  mutex_unlock(mutex_t *self) {
 /*----------------------------------------------------------------------------*/
   
 	return 0;
