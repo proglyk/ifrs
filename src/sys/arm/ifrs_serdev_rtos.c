@@ -1,3 +1,13 @@
+/**
+	******************************************************************************
+  * @file    ifrs_serdev_rtos.c
+  * @author  Ilia Proniashin, ilyapronyashin23@yandex.ru
+  * @version V0.1.0
+  * @date    10-September-2025
+  * @brief   Implementation of serial device driver
+  * @attention The source code is presented as is
+  *****************************************************************************/
+
 #include "ifrs/ifrs_serdev.h"
 #include "sys/arm/userint.h"
 #include "stdbool.h"

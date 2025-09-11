@@ -1,6 +1,6 @@
 /**
 	******************************************************************************
-  * @file    serdev.h
+  * @file    ifrs_serdev.h
   * @author  Ilia Proniashin, ilyapronyashin23@yandex.ru
   * @version V0.1.0
   * @date    10-September-2025

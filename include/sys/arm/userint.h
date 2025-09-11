@@ -1,3 +1,13 @@
+/**
+	******************************************************************************
+  * @file    userint.h
+  * @author  Ilia Proniashin, ilyapronyashin23@yandex.ru
+  * @version V0.1.0
+  * @date    10-September-2025
+  * @brief   Implementation of serial device driver
+  * @attention The source code is presented as is
+  *****************************************************************************/
+
 #ifndef _USERINT_H_
 #define _USERINT_H_
 
