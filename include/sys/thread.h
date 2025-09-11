@@ -1,5 +1,5 @@
 /*******************************************************************************
-  * @file    ifrs_thread.h
+  * @file    thread.h
   * @author  Ilia Proniashin, ilyapronyashin23@yandex.ru
   * @version V0.1.0
   * @date    10-September-2025

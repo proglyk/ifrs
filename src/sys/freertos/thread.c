@@ -7,7 +7,7 @@
   * @attention The source code is presented as is
   *****************************************************************************/
 
-#include "sys/arm/OS/thread.h"
+#include "sys/thread.h"
 #include "FreeRTOS.h"
 #include "task.h"
 

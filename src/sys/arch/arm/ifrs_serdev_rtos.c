@@ -9,7 +9,7 @@
   *****************************************************************************/
 
 #include "ifrs/ifrs_serdev.h"
-#include "sys/arm/userint.h"
+#include "sys/arch/arm/userint.h"
 #include "stdbool.h"
 
 static int  serdev__link(serdev_t *);
